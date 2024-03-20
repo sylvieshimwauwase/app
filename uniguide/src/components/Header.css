@@ -1,0 +1,48 @@
+.header {
+    background-color: #f0dede;
+    padding: 10px;
+    /*text-align: center;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 167px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    width: 239px;
+    height: 167px;
+  }
+  
+  .nav-section,
+  .btn-section {
+    margin-left: 20px;
+  }
+  
+  .nav-list {
+    margin-top: 10px;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .nav-list li:hover {
+    text-decoration: underline;
+  }
+  

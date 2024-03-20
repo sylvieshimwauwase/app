@@ -1,12 +1,19 @@
-import Todo from "./pages/Todo";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LogIn from './pages/LogIn';
+import SignUp from './pages/SignUp';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>My Todos</h1>
-      <Todo />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LogIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
